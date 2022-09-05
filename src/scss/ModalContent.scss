@@ -1,0 +1,44 @@
+$background-color:#1f1f1f;
+$surface-color:#242424;
+$primary-color:#716fb2;
+$on-primary:#01001e;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color;
+    padding: 40px;
+    border-radius: 32px;
+    textarea {
+        margin-bottom: 24px;
+        background-color: $background-color;
+        color: white;
+        font-size: 17px;
+        border: none;
+         ::placeholder {
+            color: white;
+            font-size: 17px;
+            opacity: 1;
+        }
+    }
+    textarea::placeholder {
+        color: white;
+        font-size: 17px;
+        opacity: 1;
+    }
+    button {
+        width: 100px;
+        padding: 16px 32px;
+        border-radius: 32px;
+        margin-bottom: 0 !important;
+        border: none;
+        color: $on-primary;
+        background-color: $primary-color;
+        span {
+            color: $on-primary;
+            font-size: 17px;
+            font-weight: 550;
+        }
+    }
+}
